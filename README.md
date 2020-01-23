@@ -1,7 +1,7 @@
 # minimal-flask-server
 
-A small and minimalistic Flask framework with Gunicorm frontend.
-Based on alpine 3.11 with the minimal comonents to run a basic Flask
+A small and minimalistic Flask framework with Gunicorn frontend.
+Based on alpine 3.11 with the minimal components to run a basic Flask
 application.
 
 ## Modules supplied
@@ -18,5 +18,5 @@ Werkzeug==0.16.0
   
 ## Usage
 
-Use this image as a base for your own Python webapp. If you need addtional modules
-please install them in user space for the user web inyour own image.
+Use this image as a base for your own Flask webapp. If you need addtional modules
+please install them in user space for the user 'web' (UID 1000) in your own image.
