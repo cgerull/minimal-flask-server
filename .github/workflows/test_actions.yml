@@ -1,6 +1,8 @@
 name: GitHub Test CI
 
-on: [push]
+on:
+  push:
+    tags: 
 
 jobs:
 
@@ -16,3 +18,9 @@ jobs:
       run: echo $GITHUB_REF
     - name: Git SHA
       run: echo $GITHUB_SHA
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+    - name: Get version number
+      run: echo ${{ steps.tag.outputs.result }}
+            
