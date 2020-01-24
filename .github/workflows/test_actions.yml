@@ -2,7 +2,8 @@ name: GitHub Test CI
 
 on:
   push:
-    tags: 
+    branches: 
+      - test-actions
 
 jobs:
 
