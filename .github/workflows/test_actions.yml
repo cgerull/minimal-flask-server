@@ -1,9 +1,7 @@
 name: GitHub Test CI
 
 on:
-  push:
-    branches: 
-      - test-actions
+  [push]
 
 jobs:
 
