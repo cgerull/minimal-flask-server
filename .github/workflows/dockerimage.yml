@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --build-arg TOKEN=$((secret.Microservice_token}} --tag cgerull/minimal-flask-server:latest
+      run: docker build . --file Dockerfile --build-arg TOKEN=${{secret.Microservice_token}} --tag cgerull/minimal-flask-server:latest
     - name: Push Docker Image
       run: docker push cgerull/minimal-flask-server:latest
