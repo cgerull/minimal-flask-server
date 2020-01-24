@@ -1,0 +1,7 @@
+---
+# Test GitHub actions
+
+echo "Respository variables"
+echo $GITHUB_REPOSITORY
+echo $GITHUB_REF
+echo $GITHUB_SHA
