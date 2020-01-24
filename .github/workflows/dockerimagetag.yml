@@ -2,10 +2,8 @@ name: Docker Image CI tag
 
 on:
   push:
-    branches: 
-      - master
-    tags:
-      - v*
+    tags: 
+      - 'v*'
 
 jobs:
 
