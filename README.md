@@ -4,8 +4,11 @@ A small and minimalistic Flask framework with Gunicorn frontend.
 Based on alpine 3.11 with the minimal components to run a basic Flask
 application.
 
+
 ![Docker Image CI latest](https://github.com/cgerull/minimal-flask-server/workflows/Docker%20Image%20CI%20latest/badge.svg?branch=development)
+
 ![Docker Image CI tag](https://github.com/cgerull/minimal-flask-server/workflows/Docker%20Image%20CI%20tag/badge.svg?branch=master)
+
 
 ## Modules supplied
 
