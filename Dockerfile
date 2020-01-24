@@ -28,7 +28,7 @@ USER root
 ARG TOKEN
 RUN wget -O /microscanner https://get.aquasec.com/microscanner && \
     chmod +x /microscanner && \
-    /microscanner $TOKEN && \
+    /microscanner $TOKEN --no-verify && \
     rm -rf /microscanner
 USER web
 WORKDIR /home/web
