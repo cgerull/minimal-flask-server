@@ -1,7 +1,18 @@
----
-# Test GitHub actions
+name: GitHub Test CI
 
-echo "Respository variables"
-echo $GITHUB_REPOSITORY
-echo $GITHUB_REF
-echo $GITHUB_SHA
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Respository variables
+      run: echo $GITHUB_REPOSITORY
+    - name: Git Branch
+      run: echo $GITHUB_REF
+    - name: Git SHA
+      run: echo $GITHUB_SHA
