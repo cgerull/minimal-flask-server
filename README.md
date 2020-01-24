@@ -4,6 +4,8 @@ A small and minimalistic Flask framework with Gunicorn frontend.
 Based on alpine 3.11 with the minimal components to run a basic Flask
 application.
 
+https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg
+
 ## Modules supplied
 
 ```bash
