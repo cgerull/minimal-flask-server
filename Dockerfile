@@ -24,8 +24,11 @@ RUN pip3 install --user -r requirements.txt
 
 EXPOSE 8080
 
-# ARG TOKEN
-# RUN wget -O /microscanner https://get.aquasec.com/microscanner && \
-#     chmod +x /microscanner && \
-#     /microscanner $TOKEN && \
-#     rm -rf /microscanner
+USER root
+ARG TOKEN
+RUN wget -O /microscanner https://get.aquasec.com/microscanner && \
+    chmod +x /microscanner && \
+    /microscanner $TOKEN --no-verify && \
+    rm -rf /microscanner
+USER web
+WORKDIR /home/web
