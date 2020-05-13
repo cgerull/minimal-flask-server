@@ -13,7 +13,7 @@ application.
 ## Modules supplied
 
 ```bash
-Flask==1.1.1
+Flask==1.1.2
 Flask-Bootstrap==3.3.7.1
 gunicorn==20.0.4
 Jinja2==2.10.3
